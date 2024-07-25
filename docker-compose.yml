@@ -1,0 +1,17 @@
+version: '3'
+
+services:
+  semaphore:
+    image: semaphoreui/semaphore:latest
+    ports:
+      - "3111:3000"
+    environment:
+      SEMAPHORE_DB_DIALECT: "bolt"
+      SEMAPHORE_ADMIN_PASSWORD: "admin"
+      SEMAPHORE_ADMIN_NAME: "admin"
+      SEMAPHORE_ADMIN_EMAIL: "admin@localhost"
+      SEMAPHORE_ADMIN: "admin"
+      TZ: "Europe/Berlin"
+    volumes:
+      - ~/semaphore/config:/etc/semaphore # config.json location
+      - ~/semaphore/data:/var/lib/semaphore # database.boltdb location (Not required if using MySQL or PostgreSQL)

@@ -1,16 +1,14 @@
-module github.com/ansible-semaphore/semaphore
+module semaphore
 
 go 1.21
 
 require (
-	github.com/Masterminds/squirrel v1.5.4
 	github.com/coreos/go-oidc/v3 v3.9.0
 	github.com/creack/pty v1.1.21
 	github.com/go-git/go-git/v5 v5.11.0
 	github.com/go-gorp/gorp/v3 v3.1.0
 	github.com/go-ldap/ldap/v3 v3.4.6
 	github.com/go-sql-driver/mysql v1.7.1
-	github.com/golang-jwt/jwt/v4 v4.5.0
 	github.com/google/go-github v17.0.0+incompatible
 	github.com/gorilla/context v1.1.2
 	github.com/gorilla/handlers v1.5.2
@@ -31,6 +29,7 @@ require (
 require (
 	dario.cat/mergo v1.0.0 // indirect
 	github.com/Azure/go-ntlmssp v0.0.0-20221128193559-754e69321358 // indirect
+	github.com/Masterminds/squirrel v1.5.4 // indirect
 	github.com/Microsoft/go-winio v0.6.1 // indirect
 	github.com/ProtonMail/go-crypto v1.0.0 // indirect
 	github.com/cloudflare/circl v1.3.7 // indirect
